@@ -22,7 +22,7 @@ const perguntas = [
   },
 
   {
-    enunciado: "Pergunta 3",
+    enunciado: "O boto cor-de-rosa pega casadas?",
     alternativas: [
       "Resposta 1",
       "Resposta 2"
@@ -45,3 +45,12 @@ const perguntas = [
     ]
   }
 ];
+
+let atual = 2;
+let perguntaAtual;
+
+function mostraPergunta () {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+mostraPergunta ();
